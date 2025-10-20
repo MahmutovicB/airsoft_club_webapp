@@ -1,0 +1,388 @@
+<!-- Admin Dashboard -->
+<div class="admin-wrapper bg-light min-vh-100">
+  
+    <!-- Admin Header -->
+    <section class="admin-header bg-dark py-5" style="padding-top: 150px !important;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-3" data-aos="fade-right">
+              <iconify-icon icon="lucide:shield" class="fs-1 text-primary"></iconify-icon>
+              <div>
+                <h2 class="text-white mb-1">Admin Dashboard</h2>
+                <p class="text-white text-opacity-70 mb-0">Dobrodošao, Admin!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="#home" class="btn btn-outline-dark text-white special">
+              <iconify-icon icon="lucide:arrow-left" class="me-2"></iconify-icon>
+              Nazad na početnu
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Stats Cards -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4" data-aos="fade-up">
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Pending korisnici</p>
+                    <h3 class="mb-0 fw-bold">12</h3>
+                  </div>
+                  <div class="round-48 bg-primary bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:users" class="fs-5 text-primary"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Aktivni eventi</p>
+                    <h3 class="mb-0 fw-bold">5</h3>
+                  </div>
+                  <div class="round-48 bg-success bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:calendar" class="fs-5 text-success"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Timovi</p>
+                    <h3 class="mb-0 fw-bold">3</h3>
+                  </div>
+                  <div class="round-48 bg-info bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:shield" class="fs-5 text-info"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Nove poruke</p>
+                    <h3 class="mb-0 fw-bold">8</h3>
+                  </div>
+                  <div class="round-48 bg-warning bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:mail" class="fs-5 text-warning"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Quick Actions -->
+    <section class="py-4">
+      <div class="container">
+        <div class="card border-0 shadow-sm" data-aos="fade-up">
+          <div class="card-body p-4">
+            <h5 class="mb-4 fw-bold">Brze akcije</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                  <iconify-icon icon="lucide:plus"></iconify-icon>
+                  Kreiraj novi event
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                  <iconify-icon icon="lucide:upload"></iconify-icon>
+                  Dodaj u galeriju
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                  <iconify-icon icon="lucide:users"></iconify-icon>
+                  Kreiraj tim
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Pending Users Section -->
+    <section class="py-4">
+      <div class="container">
+        <div class="card border-0 shadow-sm" data-aos="fade-up">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="mb-0 fw-bold">Pending registracije</h5>
+              <span class="badge bg-primary">12 na čekanju</span>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Ime i prezime</th>
+                    <th>Email</th>
+                    <th>Datum registracije</th>
+                    <th>Akcije</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fw-semibold">Emir Hadžić</td>
+                    <td>emir.hadzic@email.com</td>
+                    <td>15.01.2025</td>
+                    <td>
+                      <button class="btn btn-sm btn-success me-2">
+                        <iconify-icon icon="lucide:check"></iconify-icon>
+                        Odobri
+                      </button>
+                      <button class="btn btn-sm btn-danger">
+                        <iconify-icon icon="lucide:x"></iconify-icon>
+                        Odbij
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">Lejla Softić</td>
+                    <td>lejla.softic@email.com</td>
+                    <td>14.01.2025</td>
+                    <td>
+                      <button class="btn btn-sm btn-success me-2">
+                        <iconify-icon icon="lucide:check"></iconify-icon>
+                        Odobri
+                      </button>
+                      <button class="btn btn-sm btn-danger">
+                        <iconify-icon icon="lucide:x"></iconify-icon>
+                        Odbij
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">Kenan Osmanović</td>
+                    <td>kenan.osmanovic@email.com</td>
+                    <td>13.01.2025</td>
+                    <td>
+                      <button class="btn btn-sm btn-success me-2">
+                        <iconify-icon icon="lucide:check"></iconify-icon>
+                        Odobri
+                      </button>
+                      <button class="btn btn-sm btn-danger">
+                        <iconify-icon icon="lucide:x"></iconify-icon>
+                        Odbij
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Events Management -->
+    <section class="py-4">
+      <div class="container">
+        <div class="card border-0 shadow-sm" data-aos="fade-up">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="mb-0 fw-bold">Upravljanje eventima</h5>
+              <button class="btn btn-primary btn-sm">
+                <iconify-icon icon="lucide:plus"></iconify-icon>
+                Novi event
+              </button>
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card border">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                      <div>
+                        <h6 class="fw-bold mb-1">CQB Borba - Ilijas</h6>
+                        <p class="text-muted mb-0 small">
+                          <iconify-icon icon="lucide:calendar" class="me-1"></iconify-icon>
+                          20.01.2025 • 14:00
+                        </p>
+                      </div>
+                      <span class="badge bg-success">Aktivno</span>
+                    </div>
+                    <p class="small mb-3">Intenzivna CQB borba u zatvorenom prostoru. Maksimalno 20 učesnika.</p>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-sm btn-outline-primary flex-fill">
+                        <iconify-icon icon="lucide:edit"></iconify-icon>
+                        Uredi
+                      </button>
+                      <button class="btn btn-sm btn-outline-danger">
+                        <iconify-icon icon="lucide:trash"></iconify-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card border">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                      <div>
+                        <h6 class="fw-bold mb-1">Outdoor Milsim</h6>
+                        <p class="text-muted mb-0 small">
+                          <iconify-icon icon="lucide:calendar" class="me-1"></iconify-icon>
+                          27.01.2025 • 10:00
+                        </p>
+                      </div>
+                      <span class="badge bg-warning">Predstoji</span>
+                    </div>
+                    <p class="small mb-3">Taktička outdoor misija sa realističnim scenarijima. 30+ igrača.</p>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-sm btn-outline-primary flex-fill">
+                        <iconify-icon icon="lucide:edit"></iconify-icon>
+                        Uredi
+                      </button>
+                      <button class="btn btn-sm btn-outline-danger">
+                        <iconify-icon icon="lucide:trash"></iconify-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Messages from Contact Form -->
+    <section class="py-4 pb-8">
+      <div class="container">
+        <div class="card border-0 shadow-sm" data-aos="fade-up">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h5 class="mb-0 fw-bold">Poruke iz kontakt forme</h5>
+              <span class="badge bg-warning">8 novih</span>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Adnan Imamović</h6>
+                    <p class="mb-1 small">Pitanje o opremi za početnike</p>
+                    <p class="text-muted small mb-0">adnan.imamovic@email.com</p>
+                  </div>
+                  <div class="text-end">
+                    <small class="text-muted">Prije 2h</small>
+                    <div class="mt-2">
+                      <button class="btn btn-sm btn-outline-primary">Odgovori</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Nejra Husić</h6>
+                    <p class="mb-1 small">Zainteresovana za učlanjenje</p>
+                    <p class="text-muted small mb-0">nejra.husic@email.com</p>
+                  </div>
+                  <div class="text-end">
+                    <small class="text-muted">Prije 5h</small>
+                    <div class="mt-2">
+                      <button class="btn btn-sm btn-outline-primary">Odgovori</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Haris Memić</h6>
+                    <p class="mb-1 small">Lokacija za treninge</p>
+                    <p class="text-muted small mb-0">haris.memic@email.com</p>
+                  </div>
+                  <div class="text-end">
+                    <small class="text-muted">Juče</small>
+                    <div class="mt-2">
+                      <button class="btn btn-sm btn-outline-primary">Odgovori</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+  
+  <style>
+  /* Admin Dashboard Custom Styles */
+  .admin-wrapper {
+    padding-bottom: 50px;
+  }
+  
+  .admin-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  }
+  
+  .round-48 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .btn-sm iconify-icon {
+    font-size: 16px;
+  }
+  
+  .list-group-item {
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .list-group-item:hover {
+    border-left-color: #C1FF72;
+    background-color: #f8f9fa;
+  }
+
+    .special:hover {
+        color: black;
+    }
+  </style>
