@@ -1,0 +1,480 @@
+<!-- User Dashboard -->
+<div class="user-dashboard-wrapper bg-light min-vh-100">
+  
+    <div style="height: 100px;"></div>
+  
+    <!-- User Header -->
+    <section class="user-header bg-dark py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-3">
+              <div class="position-relative">
+                <img src="./assets/images/slike/profile.jpeg" alt="Profile" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 3px solid #C1FF72;">
+                <span class="position-absolute bottom-0 end-0 bg-success rounded-circle" style="width: 20px; height: 20px; border: 3px solid #1c4f1d;"></span>
+              </div>
+              <div>
+                <h2 class="text-white mb-1">Dobrodošao, Benjamin!</h2>
+                <p class="text-white text-opacity-70 mb-0">
+                  <iconify-icon icon="lucide:shield" class="me-1"></iconify-icon>
+                  Tim: Alpha Squad
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <button class="btn btn-outline-dark me-2">
+              <iconify-icon icon="lucide:settings" class="me-2"></iconify-icon>
+              Postavke
+            </button>
+            <button class="btn btn-outline-dark">
+              <iconify-icon icon="lucide:log-out" class="me-2"></iconify-icon>
+              Odjava
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Stats Cards -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Odigrani mečevi</p>
+                    <h3 class="mb-0 fw-bold">24</h3>
+                  </div>
+                  <div class="round-48 bg-primary bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:target" class="fs-5 text-primary"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Nadolazeći eventi</p>
+                    <h3 class="mb-0 fw-bold">3</h3>
+                  </div>
+                  <div class="round-48 bg-success bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:calendar-check" class="fs-5 text-success"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Moja oprema</p>
+                    <h3 class="mb-0 fw-bold">8</h3>
+                  </div>
+                  <div class="round-48 bg-info bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:crosshair" class="fs-5 text-info"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-muted mb-1">Članstvo</p>
+                    <h3 class="mb-0 fw-bold text-success">Aktivno</h3>
+                  </div>
+                  <div class="round-48 bg-warning bg-opacity-10 d-flex align-items-center justify-content-center">
+                    <iconify-icon icon="lucide:check-circle" class="fs-5 text-warning"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Quick Actions -->
+    <section class="py-4">
+      <div class="container">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h5 class="mb-4 fw-bold">Brze akcije</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                  <iconify-icon icon="lucide:user-pen"></iconify-icon>
+                  Uredi profil
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#addEquipmentModal">
+                  <iconify-icon icon="lucide:plus"></iconify-icon>
+                  Dodaj opremu
+                </button>
+              </div>
+              <div class="col-md-4">
+                <a href="#events" class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                  <iconify-icon icon="lucide:calendar"></iconify-icon>
+                  Pregledaj evente
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Profile Section -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h5 class="mb-0 fw-bold">Moj profil</h5>
+                  <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                    <iconify-icon icon="lucide:edit"></iconify-icon>
+                  </button>
+                </div>
+                <div class="text-center mb-4">
+                  <img src="./assets/images/slike/profile.jpeg" alt="Profile" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                  <button class="btn btn-sm btn-outline-secondary">
+                    <iconify-icon icon="lucide:camera"></iconify-icon>
+                    Promijeni sliku
+                  </button>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <div>
+                    <p class="text-muted small mb-1">Puno ime</p>
+                    <p class="mb-0 fw-semibold">Benjamin Mahmutovic</p>
+                  </div>
+                  <div>
+                    <p class="text-muted small mb-1">Email</p>
+                    <p class="mb-0">bm.mahmutovic@email.com</p>
+                  </div>
+                  <div>
+                    <p class="text-muted small mb-1">Telefon</p>
+                    <p class="mb-0">+387 61 882 177</p>
+                  </div>
+                  <div>
+                    <p class="text-muted small mb-1">Datum rođenja</p>
+                    <p class="mb-0">18.09.2005</p>
+                  </div>
+                  <div>
+                    <p class="text-muted small mb-1">Tim</p>
+                    <span class="badge bg-primary">Alpha Squad</span>
+                  </div>
+                  <div>
+                    <p class="text-muted small mb-1">Bio</p>
+                    <p class="mb-0 small">Strastveni airsoft igrač sa 5 godina iskustva. Volim taktičke igre i team building.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-8">
+            <!-- Equipment Section -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <h5 class="mb-0 fw-bold">Moja oprema</h5>
+                  <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#addEquipmentModal">
+                    <iconify-icon icon="lucide:plus"></iconify-icon>
+                    Dodaj novu
+                  </button>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card border">
+                      <div class="card-body p-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h6 class="fw-bold mb-0">M4A1 Replica</h6>
+                            <p class="text-muted small mb-0">Tokyo Marui</p>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-light" data-bs-toggle="dropdown">
+                              <iconify-icon icon="lucide:more-vertical"></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><iconify-icon icon="lucide:edit" class="me-2"></iconify-icon>Uredi</a></li>
+                              <li><a class="dropdown-item text-danger" href="#"><iconify-icon icon="lucide:trash" class="me-2"></iconify-icon>Obriši</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="small mb-2">Električni AEG sa hop-up sistemom. FPS: 350-380.</p>
+                        <span class="badge bg-success small">Primarna</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border">
+                      <div class="card-body p-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h6 class="fw-bold mb-0">Glock 19 GBB</h6>
+                            <p class="text-muted small mb-0">Umarex</p>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-light" data-bs-toggle="dropdown">
+                              <iconify-icon icon="lucide:more-vertical"></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><iconify-icon icon="lucide:edit" class="me-2"></iconify-icon>Uredi</a></li>
+                              <li><a class="dropdown-item text-danger" href="#"><iconify-icon icon="lucide:trash" class="me-2"></iconify-icon>Obriši</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="small mb-2">Gas blowback pištolj, 350 FPS.</p>
+                        <span class="badge bg-info small">Sekundarna</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border">
+                      <div class="card-body p-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h6 class="fw-bold mb-0">Taktički prsluk</h6>
+                            <p class="text-muted small mb-0">Condor</p>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-light" data-bs-toggle="dropdown">
+                              <iconify-icon icon="lucide:more-vertical"></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><iconify-icon icon="lucide:edit" class="me-2"></iconify-icon>Uredi</a></li>
+                              <li><a class="dropdown-item text-danger" href="#"><iconify-icon icon="lucide:trash" class="me-2"></iconify-icon>Obriši</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="small mb-2">Plate carrier sa MOLLE sistemom.</p>
+                        <span class="badge bg-secondary small">Oprema</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border">
+                      <div class="card-body p-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                          <div>
+                            <h6 class="fw-bold mb-0">Zaštitne naočare</h6>
+                            <p class="text-muted small mb-0">Pyramex</p>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-light" data-bs-toggle="dropdown">
+                              <iconify-icon icon="lucide:more-vertical"></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><iconify-icon icon="lucide:edit" class="me-2"></iconify-icon>Uredi</a></li>
+                              <li><a class="dropdown-item text-danger" href="#"><iconify-icon icon="lucide:trash" class="me-2"></iconify-icon>Obriši</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <p class="small mb-2">Anti-fog, balistička zaštita.</p>
+                        <span class="badge bg-secondary small">Zaštita</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Upcoming Events -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                  <h5 class="mb-0 fw-bold">Moje prijave za evente</h5>
+                  <a href="#events" class="btn btn-sm btn-outline-dark">Svi eventi</a>
+                </div>
+                <div class="list-group">
+                  <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between align-items-start">
+                      <div>
+                        <h6 class="mb-1 fw-semibold">CQB Borba - Ilijas</h6>
+                        <p class="mb-1 small text-muted">
+                          <iconify-icon icon="lucide:calendar" class="me-1"></iconify-icon>
+                          20.01.2025 • 14:00
+                        </p>
+                        <p class="mb-0 small">Intenzivna CQB borba u zatvorenom prostoru.</p>
+                      </div>
+                      <span class="badge bg-success">Potvrđeno</span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between align-items-start">
+                      <div>
+                        <h6 class="mb-1 fw-semibold">Outdoor Milsim</h6>
+                        <p class="mb-1 small text-muted">
+                          <iconify-icon icon="lucide:calendar" class="me-1"></iconify-icon>
+                          27.01.2025 • 10:00
+                        </p>
+                        <p class="mb-0 small">Taktička outdoor misija sa realističnim scenarijima.</p>
+                      </div>
+                      <span class="badge bg-warning">Pending</span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between align-items-start">
+                      <div>
+                        <h6 class="mb-1 fw-semibold">Noćna igra</h6>
+                        <p class="mb-1 small text-muted">
+                          <iconify-icon icon="lucide:calendar" class="me-1"></iconify-icon>
+                          03.02.2025 • 20:00
+                        </p>
+                        <p class="mb-0 small">Noćna taktička misija sa NVG opremom.</p>
+                      </div>
+                      <span class="badge bg-success">Potvrđeno</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="pb-5"></div>
+  
+  </div>
+  
+  <!-- Edit Profile Modal -->
+  <div class="modal fade" id="editProfileModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Uredi profil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Puno ime</label>
+              <input type="text" class="form-control" value="Benjamin Mahmutovic">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" value="bm.mahmutovic@gmail.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Telefon</label>
+              <input type="tel" class="form-control" value="+387 61 882 177">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Datum rođenja</label>
+              <input type="date" class="form-control" value="2005-09-18">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Bio</label>
+              <textarea class="form-control" rows="3">Strastveni airsoft igrač sa 5 godina iskustva. Volim taktičke igre i team building.</textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Otkaži</button>
+          <button type="button" class="btn btn-primary">Sačuvaj izmjene</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add Equipment Modal -->
+  <div class="modal fade" id="addEquipmentModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Dodaj opremu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Tip opreme</label>
+              <select class="form-select">
+                <option>Primarna replica</option>
+                <option>Sekundarna replica</option>
+                <option>Oprema</option>
+                <option>Zaštita</option>
+                <option>Dodaci</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Naziv</label>
+              <input type="text" class="form-control" placeholder="npr. M4A1 Replica">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Brand</label>
+              <input type="text" class="form-control" placeholder="npr. Tokyo Marui">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Opis</label>
+              <textarea class="form-control" rows="3" placeholder="Detalji o opremi..."></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Slika (opciono)</label>
+              <input type="file" class="form-control" accept="image/*">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Otkaži</button>
+          <button type="button" class="btn btn-primary">Dodaj opremu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  /* User Dashboard Custom Styles */
+  .user-dashboard-wrapper {
+    padding-bottom: 50px;
+  }
+  
+  .user-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  }
+  
+  .round-48 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .list-group-item {
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .list-group-item:hover {
+    border-left-color: #C1FF72;
+    background-color: #f8f9fa;
+  }
+  
+  #user-dashboard [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  </style>

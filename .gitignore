@@ -1,0 +1,4 @@
+tests/
+vendor/
+.phpunit.result.cache
+phpunit.xml
