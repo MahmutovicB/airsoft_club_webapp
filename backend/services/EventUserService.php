@@ -1,5 +1,5 @@
 <?php
-require_once '../dao/EventUserDao.php';
+require_once './dao/EventUserDao.php';
 require_once 'BaseService.php';
 
 class EventUserService extends BaseService {

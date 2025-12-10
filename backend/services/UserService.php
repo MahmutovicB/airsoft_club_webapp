@@ -1,5 +1,5 @@
 <?php
-require_once '../dao/UserDao.php';
+require_once './dao/UserDao.php';
 require_once 'BaseService.php';
 
 class UserService extends BaseService {

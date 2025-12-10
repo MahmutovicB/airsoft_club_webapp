@@ -19,6 +19,23 @@ class AdminDao extends BaseDao {
         $stmt->execute();
         return $stmt->fetch();
     }
+
+    public function getAll() {
+        $stmt = $this->connection->prepare("SELECT * FROM " . $this->table);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+    public function addAdmin($data) {
+        // $columns = implode(", ", array_keys($data)); 
+        // $placeholders = ":" . implode(", :", array_keys($data));
+        // $sql = "INSERT INTO " . $this->table . " ($columns) VALUES ($placeholders)";
+        // $stmt = $this->connection->prepare($sql);
+        // return $stmt->execute($data);
+        $this->insert($data);
+        return $data; 
+    }
+
 }
 
 ?>

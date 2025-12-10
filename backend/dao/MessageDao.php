@@ -18,5 +18,16 @@ class MessageDao extends BaseDao {
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public function deleteMessage($id) {
+        $this->delete($id);
+    }
+
+    public function getBySenderName($name) {
+        $stmt = $this->connection->prepare("SELECT * FROM " . $this->table . " WHERE name = :name ORDER BY created_at DESC");
+        $stmt->bindParam(':name', $name);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 ?>

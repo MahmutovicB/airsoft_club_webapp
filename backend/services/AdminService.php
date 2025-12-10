@@ -1,6 +1,6 @@
 <?php
-require_once '../dao/AdminDao.php';
-require_once 'BaseService.php';
+require_once './dao/AdminDao.php';
+require_once './services/BaseService.php';
 
 class AdminService extends BaseService {
     public function __construct() {
@@ -22,6 +22,14 @@ class AdminService extends BaseService {
         } else {
             return $this->dao->getByEmail($email); 
         }
+    }
+
+    public function getAllUsers() {
+        return $this->dao->getAllUsers();
+    }
+
+    public function addAdmin($data) {
+        return $this->dao->addAdmin($data);
     }
 
 }

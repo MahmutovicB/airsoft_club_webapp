@@ -1,5 +1,5 @@
 <?php
-require_once '../dao/MessageDao.php';
+require_once './dao/MessageDao.php';
 require_once 'BaseService.php';
 
 class MessageService extends BaseService {
@@ -20,6 +20,24 @@ class MessageService extends BaseService {
             throw new InvalidArgumentException("Limit must be a positive integer.");
         }
         return $this->dao->getRecent($limit);
+    }
+
+    public function getAll() {
+        return this->dao->getAll(); 
+    }
+
+    public function getBySenderName($name) {
+        if (empty($name)) {
+            throw new InvalidArgumentException("Sender name cannot be null or empty.");
+        } 
+        return $this->dao->getBySenderName($name);
+    }
+
+    public function deleteMessage($id) {
+        if (empty($id)) {
+            throw new InvalidArgumentException("ID is required.");
+        }
+        $this->dao->deleteMessage($id);
     }
 }
 

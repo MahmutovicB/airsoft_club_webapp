@@ -1,5 +1,5 @@
 <?php
-require_once '../dao/GalleryPhotoDao.php';
+require_once './dao/GalleryPhotoDao.php';
 require_once 'BaseService.php';
 
 class GalleryPhotoService extends BaseService {
