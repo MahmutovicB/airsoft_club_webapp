@@ -88,6 +88,7 @@ Flight::route('GET /admin/email/@email', function($email) {
  * )
  */
 Flight::route('POST /admin', function() {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $data = Flight::request()->data->getData();
     $adminService = new AdminService();
     $result = $adminService->addAdmin($data);

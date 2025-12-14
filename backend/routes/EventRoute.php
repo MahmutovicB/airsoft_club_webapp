@@ -67,6 +67,7 @@ Flight::route('GET /events/upcoming', function() {
  * )
  */
 Flight::route('POST /events', function() {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $data = Flight::request()->data->getData();
     $eventService = new EventService();
     Flight::json(['id' => $eventService->addEvent($data)]);
@@ -101,6 +102,7 @@ Flight::route('POST /events', function() {
  * )
  */
 Flight::route('PUT /events/@id', function($id) {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $data = Flight::request()->data->getData();
     $eventService = new EventService();
     $eventService->updateEvent($id, $data);

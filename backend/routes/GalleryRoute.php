@@ -4,6 +4,7 @@ require_once './services/GalleryPhotoService.php';
 /**
  * @OA\Get(
  *      path="/gallery/category/{category}",
+ *      operationId = "getGalleryByCategory",
  *      tags={"gallery"},
  *      summary="Get gallery photos by category",
  *      @OA\Parameter(
@@ -32,6 +33,7 @@ Flight::route('GET /gallery/category/@category', function($category) {
 /**
  * @OA\Get(
  *      path="/gallery/recent",
+ *      operationId = "getRecentGalleryPhotos",
  *      tags={"gallery"},
  *      summary="Get recent gallery photos",
  *      @OA\Parameter(

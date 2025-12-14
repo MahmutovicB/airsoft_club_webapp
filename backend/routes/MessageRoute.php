@@ -13,6 +13,7 @@ require_once './services/MessageService.php';
  * )
  */
 Flight::route('GET /messages', function() {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $messageService = new MessageService();
     Flight::json($messageService->getAll());
 });
@@ -38,6 +39,7 @@ Flight::route('GET /messages', function() {
  * )
  */
 Flight::route('GET /messages/sender/@name', function($name) {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $messageService = new MessageService();
     try {
         $messages = $messageService->getBySenderName($name);
@@ -66,6 +68,7 @@ Flight::route('GET /messages/sender/@name', function($name) {
  * )
  */
 Flight::route('DELETE /messages/@id', function($id) {
+    Flight::auth_middleware()->authorizeRole(Roles::ADMIN);
     $messageService = new MessageService();
     try {
         $messageService->deleteMessage($id);
