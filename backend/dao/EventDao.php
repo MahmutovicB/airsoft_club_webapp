@@ -18,5 +18,18 @@ class EventDao extends BaseDao {
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public function addEvent($data) {
+        $this->insert($data);
+        return $data;
+    }
+
+    public function updateEvent($id, $data) {
+        $this->update($id, $data);
+    }
+
+    public function deleteEvent($id) {
+        $this->delete($id);
+    }
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-require_once '../dao/EquipmentDao.php';
+require_once './dao/EquipmentDao.php';
 require_once 'BaseService.php';
 
 class EquipmentService extends BaseService {
@@ -8,11 +8,11 @@ class EquipmentService extends BaseService {
         parent::__construct($dao);
     }
 
-    public function getByTeam($team_id) {
-        if (empty($team_id)) {
-            throw new InvalidArgumentException("Team ID cannot be null or empty.");
-        } 
-        return $this->dao->getByTeam($team_id);
+    public function getByUser($user_id) {
+        if (!is_numeric($user_id) || $user_id <= 0) {
+            throw new InvalidArgumentException("Invalid user ID");
+        }
+        return $this->dao->getByUserId($user_id);
     }
 }
 ?>
